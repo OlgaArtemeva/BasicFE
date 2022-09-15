@@ -1,0 +1,25 @@
+.calendar {
+    padding: width0;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar__item {
+    list-style: none;
+    width: calc(100%/7);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.calendar__item--small {
+    font-size: .75rem;
+}
+.calendar__item--grey {
+    color: rgb(163,163,163);
+}
+.calendar__item--active {
+    background: #000;
+    color: #fff;
+}
