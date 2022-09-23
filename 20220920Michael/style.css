@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* { /* all */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --color-gray: lightgrey;
+    --color-blue: blue;
+}
+html,
+body,
+main,
+aside,
+.inbox,
+.chat,
+.panel {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--color-gray);
+    width: 200px;
+}
+
+.menu {
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
+/* .logo__img {
+  padding-right: 5px;
+} */
+.la-cube {
+  font-size: xxx-large;
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: var(--color);
+  font-size: 15px;
+}
+.menu__img {
+  padding-right: 5px;
+}
+.content {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 118px);
+    margin-right: 20px;
+}
+.header5 {
+  padding: 10px 20px; 
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kontent__border--round {
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 5px;
+}
+.kontent__border--red {
+  border: 2px solid red;
+}
+.kontent__border--blue{
+  border: 2px solid blue;
+}
+.kontent__border--blueviolet {
+  border: 2px solid blueviolet;
+}
+.kontent__border--green {
+  border: 2px solid green;
+}
+.kontent__button--plus {
+  border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background: gray;
+}
+
+.kontent__button {
+  padding: 10px 20px; 
+  margin-left: 20px;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+}
+.kontent__border--small{
+width: 10px;
+height: 10px;
+}
+.inbox {
+    border-right: 1px solid grey;
+    width: 250px;
+}
+main {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: flex;
+}
+.chat {
+    border-right: 1px solid grey;
+    width: calc(100% - 250px - 50px);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.panel {
+    width: 50px;
+}
+.chat-item {
+    height: 80px;
+    background: blue;
+    /* надо поправить, чтобы отступ был у всех кроме последнего */
+    margin-bottom: 1rem;
+}
+.container,
+.messages {
+    overflow-y: scroll;
+    /* надо поправить, видимо сделать через calc(), чтобы все было идеально */
+    height: 90%;
+}
+.container::-webkit-scrollbar,
+.messages::-webkit-scrollbar {
+    display: none;
+}
+.chat-top,
+.chat-bottom  {
+    height: 60px;
+    background: grey;
+}
+.message {
+    height: 20px;
+    background: blue;
+    margin-bottom: 1rem;
+}
