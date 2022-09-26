@@ -1,0 +1,50 @@
+*{
+background: rgb(9, 9, 146);
+}
+.cell--green {
+  background: green;
+}
+.cell--red{
+    background: red;
+  }
+  .cell--gold {
+    background: gold;
+  }
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, calc(100vh / 3));
+  grid-gap: 10px;
+  grid-template-areas:
+  "cell1 cell2 cell2 cell3"
+  "cell1 cell4 cell5 cell8"
+  "cell1 cell6 cell7 cell8"  
+  ;
+}
+.cell1{
+    grid-area: cell1;
+}
+.cell2{
+    grid-area: cell2;
+}
+.cell3{
+    grid-area: cell3;
+}
+.cell4{
+    grid-area: cell4;
+}
+.cell5{
+    grid-area: cell5;
+}
+.cell6{
+    grid-area: cell6;
+}
+.cell7{
+    grid-area: cell7;
+}
+.cell8{
+    grid-area: cell8;
+}
